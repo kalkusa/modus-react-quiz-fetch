@@ -1,15 +1,14 @@
-/* eslint-disable-next-line no-use-before-define */
 import React from "react";
-import ReactDOM from "react-dom";
-// https://ecomm-products.modus.workers.dev/
+import ReactDOM from "react-dom/client";
 import "./index.css";
-
 import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  rootElement
+  </React.StrictMode>
 );
+
+reportWebVitals();
