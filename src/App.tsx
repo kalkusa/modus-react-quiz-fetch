@@ -17,7 +17,9 @@ export default function App() {
 
   console.log("Products: %o", products);
 
-  return <ProductList products={products} />;
+  const firstFiveProducts = products.slice(0, 5);
+
+  return <ProductList products={firstFiveProducts} />;
 
   // return (
   //   <div className="text-center p-2">

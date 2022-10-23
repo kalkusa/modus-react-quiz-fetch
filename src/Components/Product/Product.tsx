@@ -6,6 +6,10 @@ interface ProductProps {
 }
 
 export const Product = ({ product }: ProductProps) => {
-  console.log("product: %o", product);
-  return <></>;
+  return (
+    <>
+      <div>Product title: {product.title}</div>
+      {product.images.length > 0 && <img src={product.images[0]} width={400} />}
+    </>
+  );
 };
