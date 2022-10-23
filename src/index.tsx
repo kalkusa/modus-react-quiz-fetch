@@ -1,8 +1,8 @@
 /* eslint-disable-next-line no-use-before-define */
 import React from "react";
 import ReactDOM from "react-dom";
-
 // https://ecomm-products.modus.workers.dev/
+import "./index.css";
 
 import App from "./App";
 

@@ -1,7 +1,6 @@
 /* eslint-disable-next-line no-use-before-define */
 import React, { useEffect } from "react";
 import { ProductList } from "./Components/ProductList/ProductList";
-import "./styles.css";
 import { Product } from "./Types/Product";
 
 export default function App() {
@@ -15,11 +14,10 @@ export default function App() {
       });
   }, []);
 
-  console.log("Products: %o", products);
-
   const firstFiveProducts = products.slice(0, 5);
 
   return <ProductList products={firstFiveProducts} />;
+  // return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
 
   // return (
   //   <div className="text-center p-2">
